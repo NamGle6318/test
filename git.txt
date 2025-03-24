@@ -60,6 +60,15 @@ git 파일 상태
     commit을 다시하는 것이기에 스테이지에 있는 파일들을 한꺼번에 커밋.
 
     --reset todo 검색
+        - git reset : 현재 stage에 있는 것들을 untracked 시킴
+        -git reset (옵션)
+            -- soft : commit 취소, stage상태 유지
+            -- mixed : commit 취소, stage 취소, local은 변경상태로 유지
+            -- hard : commit 취소, staging 취소, local 변경 취소
+                - soft,mixed,hard "HEAD"
+                - HEAD^ : 최신 commit 취소
+                - HEAD~(num) : 해당 num의 값만큼 최근 commit부터 num만큼 취소
+
 
     ignore file은 단 하나만 존재 가능 
 
@@ -89,3 +98,21 @@ git 파일 상태
 
     branch 합체하기 현재 위치해있는 브랜치에다가 합치는것
         - git merge 브랜치명
+
+    git hub 리포지토리 생성하기
+    -원격저장소와 로컬저장소 연동
+    - git remote add origin (url)
+    
+    원격저장소와 main을 동기화 (push, fetch)
+        - git push -u origin main : main commit  을 원격저장소와 동기화 (로컬 -> 원격저장소)
+
+        - git fetch 원격저장소 : 원격저장소와 main을 동기화시키기 위한 포인터 가져오기 (원격 -> 로컬저장소)
+        - git merge origin : 원격저장소와 main을 동기화
+	git pull : fetch + merge를 한번에 처리
+
+push, fetch, pull
+
+clone : 복제
+    - 본인, 타인 작성 복제 가능
+	git clone URL
+        
