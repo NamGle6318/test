@@ -89,3 +89,15 @@ git 파일 상태
 
     branch 합체하기 현재 위치해있는 브랜치에다가 합치는것
         - git merge 브랜치명
+        - 합칠 두 branch의 내용의 head부분이 같아야함
+
+    원격 저장소 (github, gitlab 등) 생성 절차
+        - 1. github repository 생성 (원격 저장소)
+        - 2. 원격저장소와 로컬저장소(main, hotfix 등) 연결 
+            -- git remote add origin (해당 repository의 url)
+        
+    - 로컬에서 원격 저장소 확인하기
+        - git remote -v
+
+        3. 동기화 작업(push)
+            -- git push -u origin main = main commit을 원격저장소(origin)과 동기화
