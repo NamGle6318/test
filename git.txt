@@ -59,4 +59,33 @@ git 파일 상태
     git commit --amend : 직전 커밋을 취소 시킴
     commit을 다시하는 것이기에 스테이지에 있는 파일들을 한꺼번에 커밋.
 
+    --reset todo 검색
+
+    ignore file은 단 하나만 존재 가능 
+
+    git branch
+    기본 브랜치명 : 
+        - before : master
+        - now    : main
+
+    branch = 분기
+        main브랜치는 놔두고, 새로운 브랜치에서 특정 작성 수행
+        브랜치별로 관리 가능
+        기본브랜치 + 새로운 브랜치 작업 merge(합체) 가능
+        팀작업간에도 branch 활용 많이함
+        서로 다른 branch끼리는 서로의 작업 내용을 공유하지 않음.
+
+    브랜치명 변경 : git branch -m branch 명
+
+    branch 생성하기
+        - git branch 브랜치명
+
+    branch 확인하기
+        - git branch
     
+    현재 위치한 *branch의 위치를 변경하기
+        - git checkout 이동할 브랜치명 [가장 처음에 수행시 main의 브랜치 내용을 복사 + 이동], [이후는 이동]
+        - branch 이동시 기존 (untracked 제외) branch에서 수정하던 내용이 있으면 이동이 불가
+
+    branch 합체하기 현재 위치해있는 브랜치에다가 합치는것
+        - git merge 브랜치명
