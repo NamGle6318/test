@@ -59,15 +59,7 @@ git 파일 상태
     git commit --amend : 직전 커밋을 취소 시킴
     commit을 다시하는 것이기에 스테이지에 있는 파일들을 한꺼번에 커밋.
 
-        - git reset : 현재 stage에 있는 것들을 untracked 시킴
-        -git reset (옵션)
-            -- soft : commit 취소, stage상태 유지
-            -- mixed : commit 취소, stage 취소, local은 변경상태로 유지
-            -- hard : commit 취소, staging 취소, local 변경 취소
-                - soft,mixed,hard "HEAD"
-                - HEAD^ : 최신 commit 취소
-                - HEAD~(num) : 해당 num의 값만큼 최근 commit부터 num만큼 취소
-
+    --reset todo 검색
 
     ignore file은 단 하나만 존재 가능 
 
@@ -114,4 +106,6 @@ push, fetch, pull
 clone : 복제
     - 본인, 타인 작성 복제 가능
 	git clone URL
+
+git hashcode
         
